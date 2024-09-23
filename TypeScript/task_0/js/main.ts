@@ -28,8 +28,6 @@ const student2: Student = {
 	location: 'bordeaux'
 }
 
-const studentList: Student[] = [student1, student2];
-
 const studentsList: Student[] = [student1, student2];
 
 const table = document.createElement('table');
