@@ -1,13 +1,20 @@
-
 {
 	"compilerOptions": {
 	  "outDir": "./dist/",
 	  "sourceMap": true,
 	  "noImplicitAny": true,
-	  "module": "es6",
-	  "target": "es5",
-	  "allowJs": true,
-	  "moduleResolution": "node"
-	}
+	  "module": "commonjs",  // Ou "es6", selon ce que tu préfères
+	  "target": "es5",       // Version ECMAScript à laquelle le code sera compilé
+	  "allowJs": true,       // Permet l'utilisation de fichiers JavaScript
+	  "moduleResolution": "node",  // Résolution des modules
+	  "skipLibCheck": true   // Ignore les vérifications des fichiers de déclaration
+	},
+	"include": [
+	  "./js/**/*"            // Inclut tous les fichiers TypeScript dans le dossier js
+	],
+	"exclude": [
+	  "node_modules",        // Exclut le dossier node_modules
+	  "**/*.spec.ts"        // Exclut les fichiers de test si tu en as
+	]
   }
   
